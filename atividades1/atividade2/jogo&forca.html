@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jogo da Forca</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Jogo da Forca</h1>
+
+  <section>
+    <h2>Palavra:</h2>
+    <p id="palavra-secreta"></p>
+  </section>
+
+  <section id="entrada-letra">
+    <h2>Digite uma letra:</h2>
+    <input type="text" id="letra" maxlength="1" autofocus />
+    <button id="botao-enviar" onclick="verificarLetra()">Enviar</button>
+  </section>
+
+  <section>
+    <h2>Letras erradas:</h2>
+    <p id="letras-erradas"></p>
+  </section>
+
+  <section>
+    <h2>Erros:</h2>
+    <p><span id="tentativas">0</span> de 6</p>
+  </section>
+
+  <section>
+    <p id="mensagem"></p>
+  </section>
+
+  <section>
+    <button id="botao-reiniciar" onclick="novoJogo()">Novo Jogo</button>
+  </section>
+
+  <script src="javascript.js"></script>
+
+
+  <!-- Roberto, Agatha, Victor -->>
+</body>
+</html>

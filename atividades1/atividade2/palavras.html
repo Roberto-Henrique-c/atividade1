@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palavras invertidas</title>
+</head>
+<body>
+   <h1>Palavras invertidas</h1>
+   
+   <script>
+
+    let palavra = prompt("Digite uma palavra:")
+
+    for (let p = palavra.length - 1; p >= 0; p--) {
+    let letra = palavra[p]
+
+    if ((palavra.length - 1 - p) % 2 === 0 ) {
+        console.log(letra.toUpperCase())
+    } else {
+        console.log(letra.toLowerCase())
+    }
+    }
+   </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f3f3;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    background-color: #1a1a1a;
+    color: white;
+    margin: 0;
+    padding: 20px 0;
+    font-size: 2.5rem;
+}
+
+section {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+#letras-palavra {
+    font-size: 36px;
+    letter-spacing: 15px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+#entrada-letra input[type="text"] {
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    text-align: center;
+    margin-right: 12px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+#entrada-letra input[type="text"]:focus {
+    border-color: #007BFF;
+}
+
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: inherit;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+#botao-enviar {
+    background-color: #222;
+    color: #fff;
+}
+
+#botao-enviar:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+#botao-reiniciar {
+    background-color: #007BFF;
+    color: #fff;
+    margin-top: 10px;
+}
+
+#botao-reiniciar:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+#letras-tentadas {
+    font-size: 24px;
+    color: crimson;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+#contador-erros p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #555;
+}
+
+
+#mensagem {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #004879; /*ficou dessa cor mesmo*/
+}
+
