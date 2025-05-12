@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Fato Aleatório sobre Gatos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #fdf6e3;
+      margin: 50px;
+    }
+
+    #container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #ff9900;
+      color: white;
+    }
+
+    #fato {
+      margin-top: 20px;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+
+<div id="container">
+  <h2>Quer saber um fato sobre gatos?</h2>
+  <button onclick="buscarFato()">Mostrar fato!</button>
+  <p id="fato"></p>
+</div>
+
+<script>
+  async function buscarFato() {
+    try {
+      const resposta = await fetch("https://catfact.ninja/fact");
+      const dados = await resposta.json();
+      document.getElementById("fato").textContent = dados.fact;
+    } catch (erro) {
+      console.error("Erro ao buscar o fato:", erro);
+      document.getElementById("fato").textContent = "Não foi possível carregar um fato agora.";
+    }
+  }
+  //ROBERTO E AGATHA
+</script>
+
+</body>
+</html>
