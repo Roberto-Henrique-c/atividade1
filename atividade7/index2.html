@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Projeto Comentários</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>Projeto Comentários</h1>
+      <p>Exemplo de manipulação de DOM com HTML, CSS e JavaScript</p>
+    </div>
+  </header>
+
+  <nav class="menu-controle">
+    <div class="container">
+      <button id="btn1" class="menu-btn"><i class="fas fa-comment-dots"></i> Comentário 1</button>
+      <button id="btn2" class="menu-btn"><i class="fas fa-comment-medical"></i> Comentário 2</button>
+      <button id="btn3" class="menu-btn"><i class="fas fa-comment-slash"></i> Comentário 3</button>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container" id="conteudo-principal">
+      <section class="comentario-container">
+        <h2 id="titulo-comentario">Título do Comentário</h2>
+        <p id="texto-comentario">
+          Este é o conteúdo inicial do comentário. Ao clicar nos botões do menu acima, este conteúdo será substituído dinamicamente com JavaScript.
+        </p>
+        <div class="imagem-wrapper">
+          <img id="imagem-comentario" src="img/" alt="Imagem do comentário" />
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 - Todos os direitos reservados. Desenvolvido por [Seu Nome].</p>
+    </div>
+  </footer>
+
+  <script src="script2.js"></script>
+</body>
+</html>
